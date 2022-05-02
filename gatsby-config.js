@@ -32,6 +32,8 @@ module.exports = {
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-sass',
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -60,7 +62,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: "ma4rt5elvesx",
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken: "8EC7hMMjpG9PXWhBPFJ5UKrXveGTWsphPx96K3LQhog"
       },
     },
     {
