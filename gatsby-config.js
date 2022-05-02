@@ -34,6 +34,7 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

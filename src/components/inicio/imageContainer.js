@@ -6,6 +6,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 const IndexHeaderWrapper = styled.div`
+  padding: 1reml;
   display: flex; 
   align-content: center;
   height: 500px;
@@ -32,6 +33,7 @@ const Title = styled.h1`
   height: fit-content;
   margin: auto;
   color: white;
+  font-size: 1.4rem;
   @media (max-width: 768px) {
     font-size: 25px;
     padding-left: 1rem;
