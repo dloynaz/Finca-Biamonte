@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Grodna';
+    src: local('Grodna'), url(./fonts/Grodna-Demo.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Aimen';
+    src: local('Aimen'), url(./fonts/Aimen-Demo.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora'), url(./fonts/Lora-Regular.ttf) format('truetype');
+}
+
+
+svg {
+    height: 30px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-image: url(https://i.ibb.co/6RxXdhC/canva-photo-editor.png);
+
+}
+
+#gatsby-focus-wrapper{
+    background-image: url(https://i.ibb.co/6RxXdhC/canva-photo-editor.png);
+
+}
+
+@media (max-width: 767px) {
+    .carrusel-div{
+        max-height: 440px;
+    }
+  }
+
+#articulo-container{
+}
+
+#nav-item, b{
+    font-family: Grodna, serif;
+    font-size: 1.5rem;
+}
+
+#section-title{
+    font-family: Grodna, serif;
+    font-size: 2.5rem;
+}
+
+h1{
+    font-family: Aimen, serif;
+    line-height: 46pt;
+}
+
+#proyecto-header-title {
+    font-family: Aimen, serif;
+    color: black
+}
+
+#proyect-container-title{
+    font-family: Aimen, serif;
+    font-size: 3rem;
+}
+
+.contact-list b{
+    font-family: Aimen, serif;
+    color: black;
+    padding-right: 1rem;
+}
+
+h3{
+    font-family: Aimen, serif;
+    font-size: 2rem;
+    line-height: 46pt;
+    background-color: antiquewhite;
+    padding: 30px;
+    text-align: center;
+}
+
+#map-container {
+    display: flex;
+}
+
+#map{
+    margin: auto;
+}
+
+p,#valores-lista, .contact-list{
+    font-family: Lora, serif;
+    font-size: 18px;
+}
+
+#blog-title{
+    font-family: Aimen, serif;
+}
+
+.contact-list{
+    font-family: Lora, serif;
+    font-size: 24px;
+
+}
+
+.contact-list li{
+    margin: 50px 20px;
+}
+
+#articulo-container b{
+    font-family: Lora, serif;
+    font-size: 20px;
+}
+
+#articulo-container, #articulo-container h2 {
+    font-family: Lora, serif;
+
+}
+
+#home-link{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lora, serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: solid thin black;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+#home-link-icon{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lora, serif;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 30px;
+
+}
+
+.box {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transition: 1s;
+
+}
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+.link-home-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#icon{
+    transition: 1s;
+}

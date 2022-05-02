@@ -1,0 +1,198 @@
+.posts {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.post {
+    margin: 0;
+    width: 100%;
+    a {
+        background: #f4f4f4;
+        color: #000000;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+
+    }
+    a:hover{
+        background: #e4e4e4;
+    }
+    h2{
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    p {
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
+
+.postItem {
+    height: 250px;
+    width: 33.3%;
+    margin: 0;
+    a {
+        height: 100%;
+        width: 100%;
+        background:lightblue;
+        color: #000000;
+        display: block;
+        padding: 0rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    a:hover{
+        .titleContainer {
+            transform: translate(0px, -100%);
+            transition: 1s;
+        }
+        
+        background:lightblue;
+    }
+    h2{
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    p {
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+    img{
+        min-height: 100%;
+    }
+    div{
+        overflow: hidden;
+        height: 250px;
+        width: 100%;
+    }
+}
+
+.titleContainer {
+    transition: 1s;
+    height: fit-content !important;
+    transform: translate(0px, 0%);
+    /* background-color: whitesmoke; */
+    background:lightblue;
+    padding: 1rem;
+}
+
+.postSubHeading {
+    margin: 0;
+    width: 50%;
+    height: 300px;
+    a {
+        height: 100%;
+        background: #f4f4f4;
+        color: #000000;
+        display: block;
+        padding: 0rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    a:hover{
+        .titleContainer {
+            transform: translate(0px, -100%);
+            transition: 1s;
+        }
+        
+        background:lightblue;
+    }
+    h2{
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+
+    }
+    p {
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+    img{
+        min-height: 100%;
+    }
+    div{
+        overflow: hidden;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+.postHeading {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    a {
+        height: 100%;
+        background: #f4f4f4;
+        color: #000000;
+        display: block;
+        padding: 0rem;
+        text-decoration: none;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    a:hover{
+        .titleContainer {
+            transform: translate(0px, -100%);
+            transition: 1s;
+        }
+        
+        background:lightblue;
+    }
+    h2{
+        margin-bottom: 0.5rem;
+    }
+    p {
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+    img{
+        min-height: 100%;
+    }
+    div{
+        overflow: hidden;
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .postHeading, .postSubHeading, .postItem{
+        width: 100%;
+        a{
+            .titleContainer {
+                transform: translate(0px, 0%);
+                transition: 1s;
+            }
+    }
+    
+  }
+
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .postHeading, .postSubHeading, .postItem{
+        width: 100%;
+  }
+  .titleContainer {
+    transform: translate(0px, -100%);
+    transition: 1s;
+  }
+    
+}
+
