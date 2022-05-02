@@ -29,7 +29,7 @@
     "gatsby-plugin-material-ui": "^3.0.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^4.6.0",
-    "gatsby-plugin-sharp": "^3.7.0",
+    "gatsby-plugin-sharp": "^3.14.3",
     "gatsby-plugin-styled-components": "^4.8.0",
     "gatsby-remark-images": "^5.4.0",
     "gatsby-remark-relative-images": "^2.0.2",
