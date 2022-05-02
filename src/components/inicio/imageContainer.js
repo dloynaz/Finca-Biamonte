@@ -6,7 +6,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 const IndexHeaderWrapper = styled.div`
-  padding: 1reml;
+  padding: 1rem;
   display: flex; 
   align-content: center;
   height: 500px;
