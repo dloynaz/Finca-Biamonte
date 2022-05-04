@@ -70,7 +70,6 @@ const ContactoPagina = () => {
                 <h3>¡Te esperamos para compartir juntos una experiencia de conexión y aprendizaje!</h3>
                 <ul className="contact-list">
                     <li> <b>Waze:</b> <a href="https://www.waze.com/en/live-map/directions/costa-rica/san-jose-province/san-isidro-district,-vasquez-de-coronado/finca-agroecologica-biamonte?place=ChIJU4z7xJHmoI8RiYiL4_kzvMQ" target="_blank">Finca Agroecológica Biamonte</a></li>
-                    <li> <b>Horario:</b> Sábado y domingo de 10 am a 5 pm  </li>
                     <li> <b>Correo electrónico:</b> <a href="mailto:quesosbiamonte@gmail.com">quesosbiamonte@gmail.com</a></li>
                     <li> <b>Teléfono:</b><a href="tel:84275590">8427-5590</a></li>
                     <li> <b>Dirección:</b> Del cementerio de Coronado 400 metros este y 400 sur del súper campos segunda entrada a mano derecha hasta topar con tapia amarilla.</li>

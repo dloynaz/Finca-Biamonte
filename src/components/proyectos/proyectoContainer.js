@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'center',
         ['@media (max-width:767px)']: { // eslint-disable-line no-useless-computed-key
             width: "600px"
-          }
+        }
     }
 }));
 
@@ -27,26 +27,26 @@ overflow: hidden;
 height: 55vh;
 width: 100%;
 display: flex; 
-background-color: ${props => props.layout.layout === "title" ? "beige": "lightsteelblue;" };
+background-color: ${props => props.layout.layout === "title" ? "beige" : "lightsteelblue;"};
 align-content: center;
 padding: 30px;
 @media (max-width: 767px) {
     flex-direction: column;
-    max-height: ${props => props.layout.layout === "title" ? "300px": "auto" }
+    max-height: ${props => props.layout.layout === "title" ? "300px" : "auto"}
   }
   @media (min-width: 767px) {
-    flex-direction: ${props => props.layout.reversed === true  ? "row-reverse" : "row" }
+    flex-direction: ${props => props.layout.reversed === true ? "row-reverse" : "row"}
   }
 
 `
 
-    const Title = styled.h2`
+const Title = styled.h2`
 margin:auto;
 border-radius: 10px;
 
 `
 
-    const Div = styled.div`
+const Div = styled.div`
 text-align: center;
 padding: 25px;
 display: flex;
@@ -118,7 +118,7 @@ const ProyectoContainer = (props) => {
             window.removeEventListener('keydown', handleKeyDown);
         };
 
-        
+
     });
 
 
@@ -129,8 +129,9 @@ const ProyectoContainer = (props) => {
 
     const [slideIn, setSlideIn] = useState(true);
     const [slideDirection, setSlideDirection] = useState('down');
-
-
+    const [absoluteImage, setAbsoluteImage] = useState({
+        left: "50%", transform: "translate(-50%,0)", position: "absolute", zIndex: 1, display: "none"
+    })
 
 
     const onArrowClick = (direction) => {
@@ -148,6 +149,22 @@ const ProyectoContainer = (props) => {
         }, 500);
     };
 
+    const handleAbsoluteImage = (e) => {
+        if(absoluteImage.display){
+            setAbsoluteImage(
+                {
+                    left: "50%", transform: "translate(-50%,0)", position: "absolute", zIndex: 1
+                }
+            )
+        } else {
+            setAbsoluteImage(
+                {
+                    left: "50%", transform: "translate(-50%,0)", position: "absolute", zIndex: 1, display: "none"
+                }
+            )
+        }
+    }
+
 
     const classes = useStyles()
 
@@ -161,7 +178,7 @@ const ProyectoContainer = (props) => {
                 <Container layout={props.content} data-aos="fade-right">
                     <ContainerParapragh layout={props.content}>{props.content.text}</ContainerParapragh>
                     <ImageDiv>
-                      <Containerimage src={props.content.img} alt={props.content.alt}></Containerimage>
+                        <Containerimage src={props.content.img} alt={props.content.alt}></Containerimage>
                     </ImageDiv>
                 </Container>
             )
@@ -171,8 +188,8 @@ const ProyectoContainer = (props) => {
                 <div data-aos="fade-left">
                     <Div >
                         <Arrow direction='left' clickFunction={() => onArrowClick('left')} />
-                        <Slide in={slideIn} direction={slideDirection}>
-                            <div className="carrusel-div" style={{maxHeight: "540px", overflow: "hidden", borderRadius: "5px"}}> 
+                        <Slide in={slideIn} direction={slideDirection} >
+                            <div className="carrusel-div" style={{ maxHeight: "540px", overflow: "hidden", borderRadius: "5px" }}>
                                 <Card className={classes.card}>
                                     <CarruselImage src={src} alt={alt}></CarruselImage>
                                 </Card>
@@ -180,6 +197,9 @@ const ProyectoContainer = (props) => {
                         </Slide>
                         <Arrow direction='right' clickFunction={() => onArrowClick('right')} />
                     </Div>
+                    <div style={absoluteImage} onClick={handleAbsoluteImage}>
+                        <img src={src} alt={alt}></img>
+                    </div>
                 </div>
             )
         }

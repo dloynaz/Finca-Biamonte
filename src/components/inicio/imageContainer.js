@@ -35,7 +35,7 @@ const Title = styled.h1`
   color: white;
   font-size: 1.4rem;
   @media (max-width: 768px) {
-    font-size: 25px;
+    font-size: 15px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
